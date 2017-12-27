@@ -1,0 +1,40 @@
+header {
+  background-color: #8d9fdd;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  position: fixed;
+  min-height: 8vh;
+  -webkit-box-shadow: 0 2px 2px black;
+  -moz-box-shadow: 0 2px 2px black;
+  box-shadow: 0 2px 2px black;
+}
+
+
+.toggle-menu {
+  float: left;
+  padding-left: 3em;
+  pointer-events: none;
+}
+
+.head-lead {
+  margin-left: -3em;
+}
+
+/*
+.hidden {
+  display: none;
+}
+*/
+nav {
+  height: inherit;
+  overflow-y: auto;
+  background-color: #e5d9f2;
+}
+
+main {
+}
+
+footer {
+}

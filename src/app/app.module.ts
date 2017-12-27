@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
 import { WeightComponent } from './weight/weight.component';
 import { DietComponent } from './diet/diet.component';
 import { ScheduleComponent } from './schedule/schedule.component';
@@ -20,7 +19,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     WeightComponent,
     DietComponent,
     ScheduleComponent
@@ -30,6 +28,6 @@ const appRoutes: Routes = [
   RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent, NavComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
