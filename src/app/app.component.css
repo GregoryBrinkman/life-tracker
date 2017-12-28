@@ -4,8 +4,6 @@ header {
   width: 100%;
   text-align: center;
   z-index: 1;
-  position: fixed;
-  min-height: 8vh;
   -webkit-box-shadow: 0 2px 2px black;
   -moz-box-shadow: 0 2px 2px black;
   box-shadow: 0 2px 2px black;
@@ -28,13 +26,14 @@ header {
 }
 */
 nav {
-  height: inherit;
   overflow-y: auto;
   background-color: #e5d9f2;
 }
 
 main {
+  background-color: yellow;
 }
 
 footer {
+  background-color: purple;
 }

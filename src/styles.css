@@ -10,7 +10,7 @@ body {
   grid-template-rows: 8vh 89vh 3vh;
   grid-template-areas: "header header"
                        "nav main"
-                       "nav footer"
+                       "nav footer";
 }
 
 header {
