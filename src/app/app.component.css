@@ -1,3 +1,4 @@
+/*
 header {
   background-color: #8d9fdd;
   margin: 0 auto;
@@ -8,23 +9,39 @@ header {
   -moz-box-shadow: 0 2px 2px black;
   box-shadow: 0 2px 2px black;
 }
+*/
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "hamburger lead .";
+  background-color: #8d9fdd;
+  z-index: 1;
+  -webkit-box-shadow: 0 2px 2px black;
+  -moz-box-shadow: 0 2px 2px black;
+  box-shadow: 0 2px 2px black;
+}
 
 .toggle-menu {
-  float: left;
-  padding-left: 3em;
-  pointer-events: none;
+  cursor: pointer;
+  grid-area: hamburger;
+  margin: auto 0;
+  padding-left: 15px;
+}
+
+.toggle-menu > div {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 4px 0;
+  border-radius: 3px;
 }
 
 .head-lead {
-  margin-left: -3em;
+  grid-area: lead;
+  margin: auto;
 }
 
-/*
-.hidden {
-  display: none;
-}
-*/
 nav {
   overflow-y: auto;
   background-color: #e5d9f2;
@@ -35,5 +52,12 @@ main {
 }
 
 footer {
+  text-align: center;
   background-color: purple;
+}
+
+@media only screen and (max-width: 700px) {
+  nav{
+    display: none;
+  }
 }
