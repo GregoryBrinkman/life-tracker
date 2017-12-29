@@ -1,6 +1,10 @@
 <div class="container">
   <header>
-    <span class="toggle-menu" onclick="toggleSidebar()">!</span>
+    <span class="toggle-menu" (click)="toggleSidebar()">
+      <div class="ham-top" [class.change]="toggleHamburger"></div>
+      <div class="ham-mid" [class.change]="toggleHamburger"></div>
+      <div class="ham-bot" [class.change]="toggleHamburger"></div>
+    </span>
     <span class="head-lead">TITLE</span>
   </header>
 
@@ -17,6 +21,7 @@
   </main>
 
   <footer>
-    foot
+    Copyright &copy; Gregory Brinkman
+    <span id="cr-date"></span>
   </footer>
 </div>
