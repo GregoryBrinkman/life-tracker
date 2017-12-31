@@ -23,6 +23,28 @@ nav {
   background-color: #e5d9f2;
 }
 
+nav ul {
+  list-style: none;
+}
+
+li {
+  padding-top: 20px;
+}
+
+/*
+  li:hover {background-color: red;}
+*/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {}
+a:visted {}
+a:hover {background-color: red;}
+a:active {}
+
 main {
   background-color: yellow;
 }
@@ -33,11 +55,21 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-  nav{
+  nav {
     display: none;
   }
 
+  nav.change{
+    display: inline;
+    position: absolute;
+    margin-top: 8vh;
+    width: 60vw;
+    height: 100vh;
+    opacity: 0.8;
+  }
+
   .toggle-menu {
+    z-index: 100;
     cursor: pointer;
     grid-area: hamburger;
     margin: auto 0;
