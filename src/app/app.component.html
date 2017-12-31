@@ -8,11 +8,17 @@
     <span class="head-lead">TITLE</span>
   </header>
 
-  <nav>
+  <nav [class.change]="toggleHamburger">
     <ul>
-      <li><a routerLink="diet">Diet</a></li>
-      <li><a routerLink="weight">Weight</a></li>
-      <li><a routerLink="schedule">Schedule</a></li>
+      <li>
+        <a routerLink="diet">Diet</a>
+      </li>
+      <li>
+        <a routerLink="weight">Weight</a>
+      </li>
+      <li>
+        <a routerLink="schedule">Schedule</a>
+      </li>
     </ul>
   </nav>
 
