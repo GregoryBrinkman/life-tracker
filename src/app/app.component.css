@@ -19,39 +19,39 @@ header {
 }
 
 nav {
+  display: table;
   overflow-y: auto;
   background-color: #e5d9f2;
 }
 
 nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
   list-style: none;
+  flex-grow: 1;
 }
 
-li {
+nav ul li a {
   padding-top: 20px;
-}
-
-/*
-  li:hover {background-color: red;}
-*/
-
-a {
+  height: 5vh;
+  display: block;
   text-decoration: none;
   color: black;
 }
 
-a:link {}
-a:visted {}
-a:hover {background-color: red;}
-a:active {}
-
-main {
-  background-color: yellow;
+a:hover {
+  background-color: white;
 }
 
 footer {
+  background-color: #8d9fdd;
   text-align: center;
-  background-color: purple;
 }
 
 @media only screen and (max-width: 700px) {
@@ -65,13 +65,13 @@ footer {
     margin-top: 8vh;
     width: 100vw;
     height: 92vh;
-    opacity: 0.8;
+    opacity: 0.9;
 
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+    -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein .5s; /* Firefox < 16 */
+    -ms-animation: fadein .5s; /* Internet Explorer */
+    -o-animation: fadein .5s; /* Opera < 12.1 */
+    animation: fadein .5s;
   }
 
   .toggle-menu {
@@ -105,30 +105,30 @@ footer {
 
   @keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.9; }
   }
 
   /* Firefox < 16 */
   @-moz-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.9; }
   }
 
   /* Safari, Chrome and Opera > 12.1 */
   @-webkit-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.9; }
   }
 
   /* Internet Explorer */
   @-ms-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.9; }
   }
 
   /* Opera < 12.1 */
   @-o-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: 0.9; }
   }
 }
