@@ -11,13 +11,13 @@
   <nav [class.change]="toggleHamburger">
     <ul>
       <li>
-        <a routerLink="diet">Diet</a>
+        <a routerLink="diet" (click)="toggleSidebar()">Diet</a>
       </li>
       <li>
-        <a routerLink="weight">Weight</a>
+        <a routerLink="weight" (click)="toggleSidebar()">Weight</a>
       </li>
       <li>
-        <a routerLink="schedule">Schedule</a>
+        <a routerLink="schedule" (click)="toggleSidebar()">Schedule</a>
       </li>
     </ul>
   </nav>
@@ -27,7 +27,10 @@
   </main>
 
   <footer>
-    Copyright &copy; Gregory Brinkman
+    Copyright&copy;
+    <a href="http://GregoryBrinkman.com">
+    Gregory Brinkman
+    </a>
     <span id="cr-date"></span>
   </footer>
 </div>
