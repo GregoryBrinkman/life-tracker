@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 import { WeightComponent } from './weight/weight.component';
 import { DietComponent } from './diet/diet.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: 'weight', component: WeightComponent },
   { path: 'diet', component: DietComponent },
   { path: 'schedule', component: ScheduleComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ]
 
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     WeightComponent,
     DietComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    HomeComponent
   ],
   imports: [
   BrowserModule,
